@@ -6,6 +6,8 @@
 - Styling: Inline CSS (basic), Responsive Layout
 - No database used — in-memory products array
 
+## Live project link:- https://nakshjewelsassigment.netlify.app/
+
 ## 🛍 Features Implemented
 
 ### Frontend
