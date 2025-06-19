@@ -1,4 +1,4 @@
-'use client'; // Important for interactivity
+'use client'; 
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ export default function ProductList() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/products') // 👈 Your Express backend
+    fetch('https://geer-assignment.onrender.com/products') 
       .then(res => res.json())
       .then(data => {
         setProducts(data);
