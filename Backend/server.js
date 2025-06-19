@@ -13,11 +13,11 @@ let products = [
   { id: '3', name: 'Bangles', price: 1999, imageUrl: '/bangles.webp' },
 ];
 
-app.get('app/products', (req, res) => {
+app.get('/products', (req, res) => {
   res.json(products);
 });
 
-app.post('app/products', (req, res) => {
+app.post('/products', (req, res) => {
   const { name, price, imageUrl } = req.body;
   const newProduct = {
     id: Date.now().toString(),
@@ -29,7 +29,7 @@ app.post('app/products', (req, res) => {
   res.status(201).json(newProduct);
 });
 
-app.delete('app/products/:id', (req, res) => {
+app.delete('/products/:id', (req, res) => {
   const { id } = req.params;
   const index = products.findIndex(p => p.id === id);
   if (index === -1) {
