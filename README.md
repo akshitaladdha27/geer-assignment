@@ -8,6 +8,7 @@
 
 ## Live project link:- https://nakshjewelsassigment.netlify.app/
 
+
 ## 🛍 Features Implemented
 
 ### Frontend
@@ -23,13 +24,13 @@
 
 ## 🚀 How to Run the Project
 
-### Backend
+## Backend
 ```bash
 cd backend
 npm install
 npm run dev
 
-### Frontend
+## Frontend
 cd frontend
 npm install
 npm run dev
